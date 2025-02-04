@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{WF}-{#}",
+ "creation": "2024-11-12 13:13:44.077545",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "is_it_alive",
+  "section_break_fvamn",
+  "full_name",
+  "title",
+  "column_break_waxev",
+  "clan",
+  "phone_number",
+  "husband",
+  "email",
+  "profile_image"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_it_alive",
+   "fieldtype": "Check",
+   "label": "Is It Alive"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "clan",
+   "fieldtype": "Link",
+   "label": "Clan",
+   "options": "Clan"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "husband",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Husband",
+   "options": "Person Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_waxev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fvamn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Profile Image"
+  }
+ ],
+ "image_field": "profile_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-04 20:51:41.219011",
+ "modified_by": "Administrator",
+ "module": "Family Tree FTM",
+ "name": "Wife Person",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "husband,clan",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "translated_doctype": 1
+}

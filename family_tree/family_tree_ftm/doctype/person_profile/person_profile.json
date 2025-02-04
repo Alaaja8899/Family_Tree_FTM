@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FTM-{###}",
+ "creation": "2024-11-12 11:30:23.391746",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person_type",
+  "parent_profile",
+  "column_break_viuz",
+  "clan",
+  "section_break_ba1fa",
+  "is_alive",
+  "user",
+  "gender",
+  "email",
+  "section_break_k1pdf",
+  "full_name",
+  "status",
+  "title",
+  "number",
+  "section_break_xrta9",
+  "info",
+  "additional_information_section",
+  "date_of_birth",
+  "profile_image",
+  "education_level",
+  "work_experience",
+  "address_section",
+  "country",
+  "city"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_alive",
+   "fieldtype": "Check",
+   "label": "Is Alive"
+  },
+  {
+   "fieldname": "person_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Person Type",
+   "options": "Big Parent\nParent\nChild",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ba1fa",
+   "fieldtype": "Section Break",
+   "label": "BASIC INFO"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xrta9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Phone",
+   "label": "Number"
+  },
+  {
+   "fetch_from": "user.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_k1pdf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info",
+   "fieldtype": "Small Text",
+   "label": "Info"
+  },
+  {
+   "fieldname": "additional_information_section",
+   "fieldtype": "Section Break",
+   "label": "ADDITIONAL INFORMATION"
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Table",
+   "label": "Education Level",
+   "options": "Education Level"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Single\nMarried\nDivorced"
+  },
+  {
+   "fieldname": "work_experience",
+   "fieldtype": "Table",
+   "label": "Work Experience",
+   "options": "Work Experience"
+  },
+  {
+   "fieldname": "parent_profile",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Parent Profile",
+   "options": "Person Profile"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "ADDRESS "
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City"
+  },
+  {
+   "fieldname": "column_break_viuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clan",
+   "fieldtype": "Link",
+   "label": "Clan ",
+   "options": "Clan"
+  }
+ ],
+ "image_field": "profile_image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Wife Person",
+   "link_fieldname": "husband"
+  }
+ ],
+ "modified": "2025-02-04 21:06:39.258722",
+ "modified_by": "Administrator",
+ "module": "Family Tree FTM",
+ "name": "Person Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "number,email",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
