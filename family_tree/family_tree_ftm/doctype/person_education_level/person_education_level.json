@@ -15,9 +15,9 @@
  "fields": [
   {
    "fieldname": "level",
-   "fieldtype": "Data",
-   "in_list_view": 1,
+   "fieldtype": "Table",
    "label": "Level",
+   "options": "Education Level",
    "reqd": 1
   },
   {
@@ -49,7 +49,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-05 10:55:49.164216",
+ "modified": "2025-02-05 11:07:38.176732",
  "modified_by": "Administrator",
  "module": "Family Tree FTM",
  "name": "Person Education Level",
