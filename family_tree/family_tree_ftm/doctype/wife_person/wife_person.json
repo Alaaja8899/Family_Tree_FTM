@@ -12,6 +12,7 @@
   "section_break_fvamn",
   "full_name",
   "title",
+  "status",
   "column_break_waxev",
   "clan",
   "phone_number",
@@ -76,12 +77,18 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "Profile Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Married\nDivorce"
   }
  ],
  "image_field": "profile_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 20:51:41.219011",
+ "modified": "2025-02-05 10:54:02.496459",
  "modified_by": "Administrator",
  "module": "Family Tree FTM",
  "name": "Wife Person",

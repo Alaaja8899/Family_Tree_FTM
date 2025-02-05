@@ -27,7 +27,7 @@
   },
   {
    "fieldname": "to_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "To date"
   },
   {
@@ -49,7 +49,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-05 09:56:35.470583",
+ "modified": "2025-02-05 10:55:49.164216",
  "modified_by": "Administrator",
  "module": "Family Tree FTM",
  "name": "Person Education Level",
