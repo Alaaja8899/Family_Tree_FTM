@@ -114,8 +114,8 @@
   {
    "fieldname": "education_level",
    "fieldtype": "Table",
-   "label": "Education Level",
-   "options": "Education Level"
+   "label": "Person educational level",
+   "options": "Person Education Level"
   },
   {
    "fieldname": "date_of_birth",
@@ -137,8 +137,8 @@
   {
    "fieldname": "work_experience",
    "fieldtype": "Table",
-   "label": "Work Experience",
-   "options": "Work Experience"
+   "label": "Person Work Experience",
+   "options": "Person Work Experience"
   },
   {
    "fieldname": "parent_profile",
@@ -172,7 +172,8 @@
    "fieldname": "clan",
    "fieldtype": "Link",
    "label": "Clan ",
-   "options": "Clan"
+   "options": "Clan",
+   "reqd": 1
   }
  ],
  "image_field": "profile_image",
@@ -183,7 +184,7 @@
    "link_fieldname": "husband"
   }
  ],
- "modified": "2025-02-04 21:06:39.258722",
+ "modified": "2025-02-05 09:59:46.658674",
  "modified_by": "Administrator",
  "module": "Family Tree FTM",
  "name": "Person Profile",
